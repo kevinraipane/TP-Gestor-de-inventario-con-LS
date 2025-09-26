@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="js/app.js" defer></script>
+    <title>Gestor de inventario</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Gestor de inventario</h2>
+        </div>
+        <nav>
+            <ul>
+                <h2>elementos</h2>
+            </ul>
+        </nav>
+        <div>
+            <h3>iconos</h3>
+        </div>
+    </header>
+    
+    <form>
+        <input type="text" name="name" placeholder="Nombre" id="name" required>
+        <input type="number" name="price" placeholder="Precio" id="price" required>
+        <input type="number" name="stock" placeholder="Stock" id="stock" required>
+        <input type="text" name="image" placeholder="Imagen" id="image" required>
+
+        <button id="btnAdd">Agregar Producto</button>
+    </form>
+
+    <ul id="productList"></ul>
+
+</body>
+</html>
