@@ -57,7 +57,7 @@ btnAdd.addEventListener("click", () => {
     const image = imageInput.value.trim();
 
     if(!name || !price || !stock) {
-        return alert("Complete todos los campos, AVISO POR ALERTA");
+        return alert("AVISO: Complete todos los campos.");
     }
 
     if(editId === null){

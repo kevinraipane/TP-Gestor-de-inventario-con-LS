@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script type="module" src="js/app.js" defer></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Gestor de inventario</title>
 </head>
 <body>
-    <header>
-        <div>
+    <header class="main-header">
+        <div class="logo">
             <h2>Gestor de inventario</h2>
         </div>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <h2>elementos</h2>
             </ul>
         </nav>
-        <div>
-            <h3>iconos</h3>
+        <div class="icons"> 
+            <i class="fa-solid fa-magnifying-glass"></i> <!-- lupa -->
+            <i class="fa-solid fa-bag-shopping"></i> <!-- bag-shopping -->
+            <i class="fa-solid fa-bars"></i> <!-- menu hamburguesa -->
         </div>
     </header>
     
-    <form>
-        <input type="text" name="name" placeholder="Nombre" id="name" required>
-        <input type="number" name="price" placeholder="Precio" id="price" required>
-        <input type="number" name="stock" placeholder="Stock" id="stock" required>
-        <input type="text" name="image" placeholder="Imagen" id="image" required>
+    <div class="conteiner-1">
+        <form class="formulary">
+            <input type="text" name="name" placeholder="Nombre" id="name" required>
+            <input type="number" name="price" placeholder="Precio" id="price" required>
+            <input type="number" name="stock" placeholder="Stock" id="stock" required>
+            <input type="text" name="image" placeholder="Imagen" id="image" required>
+            <button id="btnAdd">Agregar Producto</button>
+        </form>
 
-        <button id="btnAdd">Agregar Producto</button>
-    </form>
+        <ul id="productList" class="list-products"></ul>
+    </div>
 
-    <ul id="productList"></ul>
-
+    <footer>
+        <p class="copyright">Copyright © 2025 kevito | Powered by kevito</p>
+    </footer>
 </body>
 </html>
